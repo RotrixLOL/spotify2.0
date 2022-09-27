@@ -16,7 +16,7 @@ const AroundYou = () => {
   useEffect(() => {
     // at_mwHLWDgkeP6QX7ajuXK323RwyA89Z
     // eslint-disable-next-line no-unused-expressions
-    axios.get('https://geo.ipify.org/api/v2/country?apiKey=at_mwHLWDgkeP6QX7ajuXK323RwyA89Z')
+    axios.get(`https://geo.ipify.org/api/v2/country?apiKey=${import.meta.env.VITE_GEO_API_KEY}`)
       .then((res) => setCountry(res?.data?.location?.country))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
