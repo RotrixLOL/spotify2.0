@@ -13,8 +13,8 @@ describe('Browser testing', () => {
   });
 
   it('make a screenshot', async () => {
-    await page.goto('http://localhost:3000', { waitUntil: 'domcontentload' });
-    // await page.waitForTimeout(2000);
+    await page.goto('http://localhost:3000');
+    await page.waitForTimeout(2000);
     await page.screenshot({ path: 'screenshot.png' });
   });
 
