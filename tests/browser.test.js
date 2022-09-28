@@ -11,7 +11,7 @@ describe('Browser testing', () => {
   });
 
   it('make a screenshot', async () => {
-    await page.goto('http://localhost:5173');
+    await page.goto('http://localhost:3000');
     await page.screenshot({ path: 'screenshot.png' });
   });
 
