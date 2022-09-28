@@ -6,12 +6,15 @@ describe('Browser testing', () => {
   let page;
 
   beforeAll(async () => {
-    browser = await puppeteer.launch();
+    browser = await puppeteer.launch({
+      defaultViewport: { width: 1920, height: 1080 },
+    });
     page = await browser.newPage();
   });
 
   it('make a screenshot', async () => {
-    await page.goto('http://localhost:3000');
+    await page.goto('http://localhost:3000', { waitUntil: 'domcontentload' });
+    // await page.waitForTimeout(2000);
     await page.screenshot({ path: 'screenshot.png' });
   });
 
