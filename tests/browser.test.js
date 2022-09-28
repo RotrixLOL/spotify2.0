@@ -7,7 +7,7 @@ describe('Browser testing', () => {
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      defaultViewport: { width: 1920, height: 1080 },
+      defaultViewport: { width: 1920, height: 720 },
     });
     page = await browser.newPage();
   });
