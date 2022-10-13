@@ -43,4 +43,4 @@ jobs:
           git branch -M main
           git add -A
           git commit -am "updated screenshot" || exit 0
-          git push
+          git push -u origin main
