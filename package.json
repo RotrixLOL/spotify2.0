@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
-    "axios": "^0.27.2",
+    "axios": "^1.6.3",
     "country-code-emoji": "^2.3.0",
     "country-code-lookup": "^0.0.20",
     "puppeteer": "^18.0.5",
